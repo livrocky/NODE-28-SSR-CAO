@@ -17,11 +17,11 @@ header {
   .block{
     padding: 20px;
     display: inline-grid;
-    border: 3px solid seagreen;
+    border: 0px solid seagreen;
     margin: 20px;
-    background-color:aliceblue;
+    background-color:blanchedalmond;
     border-radius: 0.5rem;
-    box-shadow: 10px 10px 8px #61cbdd;
+    box-shadow: 10px 10px 10px rgb(50, 220, 208);
     width: 200px;
     height: 80px;
     text-align: center;
