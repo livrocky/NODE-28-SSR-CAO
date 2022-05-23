@@ -14,14 +14,16 @@ header {
     padding: 20px 25px;
   }
 
-  .vardas{
+  .block{
     padding: 20px;
     display: inline-grid;
-    border: 1px solid black;
+    border: 3px solid seagreen;
     margin: 20px;
-    background-color: bisque;
-    box-shadow: 10px 10px 5px #aaaaaa;
-    width: 150px;
+    background-color:aliceblue;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 8px #61cbdd;
+    width: 200px;
+    height: 80px;
     text-align: center;
 }
 
