@@ -1,12 +1,33 @@
-<%- include('partials/head') %>
-    <%- include('partials/nav') %>
+<!DOCTYPE html>
+<html lang="en">
 
-        <h1>APIE MANE</h1>
+<head>
+    <% include partials/head %>
+</head>
 
-        <h2>Mano vardas Rokas</h2>
-        <h3>Man yra 27 metai </h3>
-        <h4>El.Pastas ROKASRA@GMAIL>COM</h4>
+<body>
+    <% include partials/menu %>
+        <div class="container-fluid bg-3 text-center">
+            <h3>
+                <%= page %>
+            </h3><br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
 
-        </body>
+                </div>
+                <div class="col-sm-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col-sm-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+</body>
+<% include partials/script %>
 
-        </html>
+</html>
