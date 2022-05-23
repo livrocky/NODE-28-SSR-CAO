@@ -13,13 +13,7 @@ const staticDir = path.join(__dirname, 'assets');
 app.use(express.static(staticDir));
 
 app.get('/', function (req, res) {
-  // get info from db
-  const tech = ['Html', 'Css', 'Js'];
-  const data = {
-    tech,
-    title: 'Home page',
-  };
-  res.render('index', data);
+  res.render('index', { page: 'Home', menuId: 'home' });
 });
 
 // // Middleware
