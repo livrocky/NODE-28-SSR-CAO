@@ -33,9 +33,18 @@ header {
     padding: 0 5%;
   }
   
-  .navLink.active {
-    /* font-weight: bold; */
-    text-decoration: underline;
-    color: rgb(198, 198, 198);
-    background-color: rgb(103, 103, 103);
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .title{
+    background-color: black;
+    color: white;
+    padding: 10px;
+  }
+
+  .desc {
+    color: rgb(122, 117, 117);
   }

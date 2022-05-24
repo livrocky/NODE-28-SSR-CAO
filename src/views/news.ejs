@@ -1,13 +1,25 @@
 <%- include('partials/head') %>
     <%- include('partials/nav') %>
 
-        <h1>NEWS</h1>
+        <h2 class="title">News</h2>
+        <div class="grid">
+            <% if (allArticlesArr?.length) { %>
+                <% allArticlesArr.forEach(el=> { %>
+                    <div class="card">
+                        <h4>
+                            <%= el.title %>
+                        </h4>
+                        <p class="desc">
+                            <%= el.description %>
+                        </p>
+                    </div>
+                    <% }) %>
+                        <% } else { %>
+                            <p>There is no news</p>
+                            <% } %>
 
-        <%- include('partials/name') %>
-            <%- include('partials/age') %>
-                <%- include('partials/email') %>
+        </div>
 
+        </body>
 
-                    </body>
-
-                    </html>
+        </html>
