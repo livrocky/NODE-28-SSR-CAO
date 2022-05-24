@@ -16,6 +16,10 @@ app.get('/', function (req, res) {
   res.render('index', { page: 'Home', menuId: 'home' });
 });
 
+app.get('/news', function (req, res) {
+  res.render('news', { page: 'News', menuId: 'news' });
+});
+
 // // Middleware
 // app.use(morgan('dev'));
 // app.use(express.json());
