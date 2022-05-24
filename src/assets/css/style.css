@@ -34,9 +34,11 @@ header {
   }
   
   .grid {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 20px; */
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .title{
@@ -48,3 +50,20 @@ header {
   .desc {
     color: rgb(122, 117, 117);
   }
+
+  /************* EXAMPLE ***************/
+
+  img {
+    max-width: 300px;
+    height: auto;
+  }
+
+  .card{
+    display: flex;
+    padding: 10px;
+
+  }
+
+ .content{
+   padding: 20px;
+ }

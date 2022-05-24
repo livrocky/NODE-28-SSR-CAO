@@ -2,17 +2,21 @@
     <%- include('partials/nav') %>
 
         <h2 class="title">News</h2>
-        <div class="grid">
+        <div class="display">
             <% if (allArticlesArr?.length) { %>
                 <% allArticlesArr.forEach(el=> { %>
                     <div class="card">
-                        <h4>
-                            <%= el.title %>
-                        </h4>
-                        <p class="desc">
-                            <%= el.description %>
-                        </p>
-                        <img src=" <%= el.image %> " alt="image">
+                        <div class="image">
+                            <img src=" <%= el.image %> " alt="image">
+                        </div>
+                        <div class="content">
+                            <h4>
+                                <%= el.title %>
+                            </h4>
+                            <p class="desc">
+                                <%= el.description %>
+                            </p>
+                        </div>
                     </div>
                     <% }) %>
                         <% } else { %>
